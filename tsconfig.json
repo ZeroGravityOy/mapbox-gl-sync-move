@@ -6,10 +6,10 @@
     "moduleResolution": "node",
     "lib": ["dom", "esnext"],
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true,
     "isolatedModules": true,
     "skipLibCheck": true,
+    "declaration": true,
+    "declarationDir": "dist/types"
   },
   "include": ["src"]
 }
