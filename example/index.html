@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css">
+  </head>
+  <body>
+	<script type="module" src="bundle.ts"></script>
+    <div id="app">
+      <p>Welcome manual tester. Please try these actions:</p>
+      <ul>
+        <li>Pan around</li>
+        <li>Zoom in various ways</li>
+        <li>Don\t forget double-click zoom</li>
+        <li>And box zoom</li>
+        <li><button id="fly-tucson">Fly to Tucson</button></li>
+        <li><button id="fly-france">Fly to France</button></li>
+        <li>Stop one of these flights, mid-flight</li>
+      </ul>
+      <div class="container">
+        <div id="map-basic"></div>
+        <div id="map-light"></div>
+        <div id="map-dark"></div>
+      </div>
+    </div>
+  </body>
+</html>
