@@ -22,10 +22,17 @@ const mapB = new mapboxgl.Map(..);
 syncMaps(mapA, mapB);
 ```
 
-## Developing
+## Testing and Developing
 
 There are unit tests with mocked maps, and there's a page for manual testing.
 
 Run the unit tests with `npm test`.
 
 To manually test, ensure you have a `VITE_MAPBOX_ACCESS_TOKEN` environment variable set in file /example/.env. Then start the server with `npm run dev`.
+
+## Publishing to NPM registery
+
+- Update the version key in [package.json](https://github.com/ZeroGravityOy/mapbox-gl-compare/blob/main/package.json)
+- Create and merge a Pull Request
+- Open repository in IDE and choose latest main branch
+- Run commands: `git tag v1.0.0` and `git push origin v1.0.0`
